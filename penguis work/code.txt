@@ -1,0 +1,8 @@
+
+echo "Futsal_Goalkeeper" > Emma.txt | echo "Futsal_Defender" > Olivia.txt | echo "Futsal_Winger" > Isabella.txt | echo "Futsal_Winger" > Mia.txt | echo "Futsal_Pivot" > Sophia.txt
+
+echo "Futsal_Goalkeeper" > Robert.txt | echo "Futsal_Defender" > Martin.txt | echo "Futsal_Winger" > James.txt | echo "Futsal_Winger" > Liam.txt | echo "Futsal_Pivot" > Lucas.txt
+
+echo "Basketball_Point-Guard" > Ava.txt | echo "Basketball_Shooting-Guard" > Eveltn.txt | echo "Basketball_Center" > Hazel.txt | echo "Basketball_Small-Forward" > Bella.txt
+
+echo "Basketball_Point-Guard" > Logan.txt | echo "Basketball_Shooting-Guard" > Jack.txt | echo "Basketball_Center" > Joseph.txt | echo "Basketball_Power-Forward" > Matthew.txt | echo "Basketball_Small-Forward" > David.txt

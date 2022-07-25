@@ -1,0 +1,368 @@
+hello, this is second text file
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cat test.txt test1.txt 
+hello
+my name is robert
+hello, this is second text file
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ touch multiple{1..10}.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple1.txt 
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple2.txt 
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple3.txt 
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu 24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu 32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cd ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ mkdir europe
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd europe
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ touch lab.txt lab1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ echo "This is the second directory" > lab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ mv lab
+lab.txt   lab1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ mv lab
+lab.txt   lab1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp lab.txt newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:52 lab.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:51 lab1.txt
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:53 newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls *.txt
+lab.txt  lab1.txt  newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls n*.txt
+newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp newlab.txt ../clarusway/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp m*{6..10}.txt ../clarusway/
+cp: cannot stat 'm*6.txt': No such file or directory
+cp: cannot stat 'm*7.txt': No such file or directory
+cp: cannot stat 'm*8.txt': No such file or directory
+cp: cannot stat 'm*9.txt': No such file or directory
+cp: cannot stat 'm*10.txt': No such file or directory
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp m*{6..10}.txt ../clarusway/ ../europe/
+cp: cannot stat 'm*6.txt': No such file or directory
+cp: cannot stat 'm*7.txt': No such file or directory
+cp: cannot stat 'm*8.txt': No such file or directory
+cp: cannot stat 'm*9.txt': No such file or directory
+cp: cannot stat 'm*10.txt': No such file or directory
+cp: -r not specified; omitting directory '../clarusway/'
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp ../clarusway/m*{6..10}.txt ../europe/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cd ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd clarusway/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ mv m*{1..3}.txt ../europe/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:56 newlab.txt
+-rwxrwxrwx 1 rofu rofu 24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu 32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ mv newlab.txt linuxlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:56 linuxlab.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu 24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu 32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod 777 linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod 776 linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -al
+total 0
+drwxrwxrwx 1 rofu rofu 512 Jul 18 20:04 .
+drwxrwxrwx 1 rofu rofu 512 Jul 18 19:51 ..
+-rwxrwxrwx 1 rofu rofu  29 Jul 18 19:56 linuxlab.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu  24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu  32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod a=rw linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod ugo=rwx linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ mkdir america
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ rm america/
+rm: cannot remove 'america/': Is a directory
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ rmdir america/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cd
+rofu@DESKTOP-LQ31GIM:~$ cd /mnt/c/Users/emret/Desktop/Vs_Code_Storage/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ rm -rf clarusway/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd europe/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ touch .linuxworkshop.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls
+lab.txt  lab1.txt  multiple1.txt  multiple10.txt  multiple2.txt  multiple3.txt  multiple6.txt  multiple7.txt  multiple8.txt  multiple9.txt  newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ mv .linuxworkshop.txt linuxworkshop.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ 
+ *  History restored 
+
+Welcome to Ubuntu 22.04 LTS (GNU/Linux 4.4.0-19041-Microsoft x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+/etc/update-motd.d/50-landscape-sysinfo: 17: cannot create /var/lib/landscape/landscape-sysinfo.cache: Permission denied
+
+0 updates can be applied immediately.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+This message is shown once a day. To disable it please create the
+/home/rofu/.hushlogin file.
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ 
+ *  History restored 
+
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ pwd
+/mnt/c/Users/emret/Desktop/Vs_Code_Storage
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ mkdir ABC_C
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd ABC_C/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C$ ls -al
+total 0
+drwxrwxrwx 1 rofu rofu 512 Jul 20 20:08 .
+drwxrwxrwx 1 rofu rofu 512 Jul 20 20:08 ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C$ mkdir Futsal Basketball Swimming
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C$ cd Futsal/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal$ ls -al
+total 0
+drwxrwxrwx 1 rofu rofu 512 Jul 20 20:09 .
+drwxrwxrwx 1 rofu rofu 512 Jul 20 20:09 ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal$ mkdir Futsal_Women Futsal_Men
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal$ ls -l
+total 0
+drwxrwxrwx 1 rofu rofu 512 Jul 20 20:10 Futsal_Men
+drwxrwxrwx 1 rofu rofu 512 Jul 20 20:10 Futsal_Women
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal$ cd ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C$ cd Basketball/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball$ mkdir Basketball_Women Basketball_Men
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball$ cd ../Swimming/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming$ mkdir Swimming_Women Swimming_Men
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming$ cd Swimming_Women/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women$ mkdir Freestyle Butterfly
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women$ cd ../Swimming_Men/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men$ mkdir Freestyle Butterfly
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men$ cd ../../Futsal/Futsal_Women/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women$ echo "Futsal_Goalkeeper" > Emma.txt | echo "Futsal_Defender" > Olivia.txt | echo "Futsal_Winger" > Isabella.txt | echo "Futsal_Winger" > Mia.txt | echo "Futsal_Pivot" > Sophia.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:26 Emma.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:26 Isabella.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:26 Mia.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:26 Olivia.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:26 Sophia.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women$ chmod ug=rw Isabella.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:26 Emma.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:26 Isabella.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:26 Mia.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:26 Olivia.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:26 Sophia.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women$ chmod a-rwx Isabella.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:26 Emma.txt
+-r-xr-xr-x 1 rofu rofu 14 Jul 20 20:26 Isabella.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:26 Mia.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:26 Olivia.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:26 Sophia.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women$ cd ../Futsal_Men/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ echo "Futsal_Goalkeeper" > Robert.txt | echo "Futsal_Defender" > Martin.txt | echo "Futsal_Winger" > James.txt | echo "Futsal_Winger" > Liam.txt | echo "Futsal_Pivot" > Lucas.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ chmod 600 Martin.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 James.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 Liam.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:34 Lucas.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:34 Martin.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:34 Robert.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ chmod 600 Martin.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 James.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 Liam.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:34 Lucas.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:34 Martin.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:34 Robert.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ chmod u=rw,g=-,u=- Martin.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 James.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 Liam.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:34 Lucas.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:34 Martin.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:34 Robert.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ echo "Basketball_Point-Guard" > Ava.txt | echo "Basketball_Shooting-Guard" > Eveltn.txt | echo "Basketball_Center" > Hazel.txt | echo "Basketball_Small-Forward" > Bella.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ ls l
+ls: cannot access 'l': No such file or directory
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ rm -rf Ava.txt Eveltn.txt Hazel.txt Bella.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ cd ../../Basketball/Basketball_Women/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ echo "Basketball_Point-Guard" > Ava.txt | echo "Basketball_Shooting-Guard" > Eveltn.txt | echo "Basketball_Center" > Hazel.txt | echo "Basketball_Small-Forward" > Bella.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ chmod
+chmod: missing operand
+Try 'chmod --help' for more information.
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ chmod --help
+Usage: chmod [OPTION]... MODE[,MODE]... FILE...
+  or:  chmod [OPTION]... OCTAL-MODE FILE...
+  or:  chmod [OPTION]... --reference=RFILE FILE...
+Change the mode of each FILE to MODE.
+With --reference, change the mode of each FILE to that of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's mode instead of MODE values
+  -R, --recursive        change files and directories recursively
+      --help     display this help and exit
+      --version  output version information and exit
+
+Each MODE is of the form '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/chmod>
+or available locally via: info '(coreutils) chmod invocation'
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ cd ../../Futsal/Futsal_Men/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ chmot 1 Martin.txt 
+ls -l
+Command 'chmot' not found, did you mean:
+  command 'chmod' from deb coreutils (8.32-4.1ubuntu1)
+Try: sudo apt install <deb name>
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 James.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 Liam.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:34 Lucas.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:34 Martin.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:34 Robert.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ chmod ugo=r Martin.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 James.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 Liam.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:34 Lucas.txt
+-r-xr-xr-x 1 rofu rofu 16 Jul 20 20:34 Martin.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:34 Robert.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ cd ../../Basketball/Basketball_Women/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ echo "Basketbal_Power-Forward" >> Bella.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ cp ../../Futsal/Futsal_Women/Olivia.txt .
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 23 Jul 20 20:39 Ava.txt
+-rwxrwxrwx 1 rofu rofu 49 Jul 20 20:43 Bella.txt
+-rwxrwxrwx 1 rofu rofu 26 Jul 20 20:39 Eveltn.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:39 Hazel.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:44 Olivia.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Women$ cd ../
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball$ cd ../
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C$ cd Basketball/Basketball_Men/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ echo "Basketball_Point-Guard" > Logan.txt | echo "Basketball_Shooting-Guard" > Jack.txt | echo "Basketball_Center" > Joseph.txt | echo "Basketball_Power-Forward" > Matthew.txt | echo "Basketball_Small-Forward" > David.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 25 Jul 20 20:46 David.txt
+-rwxrwxrwx 1 rofu rofu 26 Jul 20 20:46 Jack.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:46 Joseph.txt
+-rwxrwxrwx 1 rofu rofu 23 Jul 20 20:46 Logan.txt
+-rwxrwxrwx 1 rofu rofu 25 Jul 20 20:46 Matthew.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ chmod a-rwx David.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ ls -l
+total 0
+-r-xr-xr-x 1 rofu rofu 25 Jul 20 20:46 David.txt
+-rwxrwxrwx 1 rofu rofu 26 Jul 20 20:46 Jack.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:46 Joseph.txt
+-rwxrwxrwx 1 rofu rofu 23 Jul 20 20:46 Logan.txt
+-rwxrwxrwx 1 rofu rofu 25 Jul 20 20:46 Matthew.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ chmod a=-rwx David.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ ls -l
+total 0
+-r-xr-xr-x 1 rofu rofu 25 Jul 20 20:46 David.txt
+-rwxrwxrwx 1 rofu rofu 26 Jul 20 20:46 Jack.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:46 Joseph.txt
+-rwxrwxrwx 1 rofu rofu 23 Jul 20 20:46 Logan.txt
+-rwxrwxrwx 1 rofu rofu 25 Jul 20 20:46 Matthew.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ chmod 444 David.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ ls -l
+total 0
+-r-xr-xr-x 1 rofu rofu 25 Jul 20 20:46 David.txt
+-rwxrwxrwx 1 rofu rofu 26 Jul 20 20:46 Jack.txt
+-rwxrwxrwx 1 rofu rofu 18 Jul 20 20:46 Joseph.txt
+-rwxrwxrwx 1 rofu rofu 23 Jul 20 20:46 Logan.txt
+-rwxrwxrwx 1 rofu rofu 25 Jul 20 20:46 Matthew.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men$ cd ../../Swimming/Swimming_Women/Freestyle/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Freestyle$ echo "Swimming_freestyle" > Scarlett.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Freestyle$ echo "Swimming Frestyle " >> /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women/Mia.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Freestyle$ cp /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women/Mia.txt .
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Freestyle$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 33 Jul 20 20:58 Mia.txt
+-rwxrwxrwx 1 rofu rofu 19 Jul 20 20:51 Scarlett.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Freestyle$ cd ../Butterfly/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Butterfly$ echo "Swimming_Butterfly" Ellie.txt
+Swimming_Butterfly Ellie.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Butterfly$ echo "Swimming_Buterfly" /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women/Emma.txt 
+Swimming_Buterfly /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women/Emma.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Butterfly$ ls -l
+total 0
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Butterfly$ echo "Swimming_Butterfly" /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women/Emma.txt .
+Swimming_Butterfly /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women/Emma.txt .
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Butterfly$ echo "Swimming_b" >> /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Women/Emma.txt .
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Butterfly$ ls -l
+total 0
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Women/Butterfly$ cd ../../Swimming_Men/Freestyle/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Freestyle$ echo "Swimming Freestyle" > Carter.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Freestyle$ echo "Swimming_freestyle" >> /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men/Robert.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Freestyle$ echo "Swimming_freestyle" >> /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men/Joseph.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Freestyle$ cp /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men/Robert.txt .
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Freestyle$ cp /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Basketball/Basketball_Men/Joseph.txt .
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Freestyle$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 19 Jul 20 21:05 Carter.txt
+-rwxrwxrwx 1 rofu rofu 37 Jul 20 21:12 Joseph.txt
+-rwxrwxrwx 1 rofu rofu 37 Jul 20 21:11 Robert.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Freestyle$ cd ../../Swimming_Men/Butterfly/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ echo "swimming_butterfly" > Isaac.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ chmod a=-rw,g=rw Isaac.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 19 Jul 20 21:15 Isaac.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ chmod a=r,g=r,u=r Isaac.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ ls -l
+total 0
+-r-xr-xr-x 1 rofu rofu 19 Jul 20 21:15 Isaac.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ echo "swimming_butterfly" >> /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men/Martin.txt 
+-bash: /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men/Martin.txt: Permission denied
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ echo "swimming_butterfly" >> /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men/Martin.txt .
+-bash: /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men/Martin.txt: Permission denied
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ cd ../../../Futsal/Futsal_Men/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ chmod 777 Martin.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 James.txt
+-rwxrwxrwx 1 rofu rofu 14 Jul 20 20:34 Liam.txt
+-rwxrwxrwx 1 rofu rofu 13 Jul 20 20:34 Lucas.txt
+-rwxrwxrwx 1 rofu rofu 16 Jul 20 20:34 Martin.txt
+-rwxrwxrwx 1 rofu rofu 37 Jul 20 21:09 Robert.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men$ cd ../../Swimming/Swimming_Men/Butterfly/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ echo "swimming_butterfly" >> /mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Futsal/Futsal_Men/Martin.txt .
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/ABC_C/Swimming/Swimming_Men/Butterfly$ ls- l

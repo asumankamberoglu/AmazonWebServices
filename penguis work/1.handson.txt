@@ -1,0 +1,131 @@
+/home/rofu/.hushloginfile.
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ pwd
+/mnt/c/Users/emret/Desktop/Vs_Code_Storage
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop$ cd Vs_Code_Storage/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktrofu@DESKTOP-rofu@rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ mkdir clarusway
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd clarusway/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ touch test.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ echo test.txt 
+test.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ echo "hello" > test.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cat test.txt 
+hello
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ echo "my name is robert" >> test.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cat test.txt 
+hello
+my name is robert
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ echo "hello, this is second text file" > test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cat test1.txt
+hello, this is second text file
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cat test.txt test1.txt 
+hello
+my name is robert
+hello, this is second text file
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ touch multiple{1..10}.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple1.txt 
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple2.txt 
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple3.txt 
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu 24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu 32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cd ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ mkdir europe
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd europe
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ touch lab.txt lab1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ echo "This is the second directory" > lab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ mv lab
+lab.txt   lab1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ mv lab
+lab.txt   lab1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp lab.txt newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:52 lab.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:51 lab1.txt
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:53 newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls *.txt
+lab.txt  lab1.txt  newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls n*.txt
+newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp newlab.txt ../clarusway/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp m*{6..10}.txt ../clarusway/
+cp: cannot stat 'm*6.txt': No such file or directory
+cp: cannot stat 'm*7.txt': No such file or directory
+cp: cannot stat 'm*8.txt': No such file or directory
+cp: cannot stat 'm*9.txt': No such file or directory
+cp: cannot stat 'm*10.txt': No such file or directory
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp m*{6..10}.txt ../clarusway/ ../europe/
+cp: cannot stat 'm*6.txt': No such file or directory
+cp: cannot stat 'm*7.txt': No such file or directory
+cp: cannot stat 'm*8.txt': No such file or directory
+cp: cannot stat 'm*9.txt': No such file or directory
+cp: cannot stat 'm*10.txt': No such file or directory
+cp: -r not specified; omitting directory '../clarusway/'
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cp ../clarusway/m*{6..10}.txt ../europe/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ cd ..
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd clarusway/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ mv m*{1..3}.txt ../europe/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:56 newlab.txt
+-rwxrwxrwx 1 rofu rofu 24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu 32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ mv newlab.txt linuxlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -l
+total 0
+-rwxrwxrwx 1 rofu rofu 29 Jul 18 19:56 linuxlab.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu  0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu 24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu 32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod 777 linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod 776 linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ ls -al
+total 0
+drwxrwxrwx 1 rofu rofu 512 Jul 18 20:04 .
+drwxrwxrwx 1 rofu rofu 512 Jul 18 19:51 ..
+-rwxrwxrwx 1 rofu rofu  29 Jul 18 19:56 linuxlab.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple10.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple4.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple5.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple6.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple7.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple8.txt
+-rwxrwxrwx 1 rofu rofu   0 Jul 18 19:50 multiple9.txt
+-rwxrwxrwx 1 rofu rofu  24 Jul 18 19:47 test.txt
+-rwxrwxrwx 1 rofu rofu  32 Jul 18 19:48 test1.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod a=rw linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ chmod ugo=rwx linuxlab.txt 
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ mkdir america
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ rm america/
+rm: cannot remove 'america/': Is a directory
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ rmdir america/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/clarusway$ cd
+rofu@DESKTOP-LQ31GIM:~$ cd /mnt/c/Users/emret/Desktop/Vs_Code_Storage/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ rm -rf clarusway/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage$ cd europe/
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ touch .linuxworkshop.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ ls
+lab.txt  lab1.txt  multiple1.txt  multiple10.txt  multiple2.txt  multiple3.txt  multiple6.txt  multiple7.txt  multiple8.txt  multiple9.txt  newlab.txt
+rofu@DESKTOP-LQ31GIM:/mnt/c/Users/emret/Desktop/Vs_Code_Storage/europe$ mv .linuxworkshop.txt linuxworkshop.txt
